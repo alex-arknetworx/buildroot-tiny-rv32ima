@@ -17,13 +17,14 @@ goodies: linux_toolchain
 	make -C goodies/hibernate deploy
 	make -C goodies/hello_linux deploy
 	make -C goodies/coremark deploy
-	
+	make -C goodies/c4 deploy
+
 everything : goodies
 	make -C modules install
 	make -C buildroot
 
 images/dtb : devicetree/devicetree.dts
-	dtc -I dts -O dtb -o $@ $^ -S 2048
+	buildroot/output/host/bin/dtc -I dts -O dtb -o $@ $^ -S 2048
 
 devicetree : images/dtb
 
