@@ -14,12 +14,12 @@ On Chinook, simply run at ~#
 
 vi /etc/hello.c
 
-The filesystem is read only (for now), however /dev/ is read write, a new .c source file can be created here and run by C4.
-
-For example:
+The filesystem is read only (for now), however /dev/ is read write, a new .c source file can be created here and run by C4. For example:
 
 cat /etc/hello.c > /dev/new.c
+
 vi /dev/new.c
+
 c4 /dev/new.c
 
 Remeber files created in /dev/ do not survive reboot!
