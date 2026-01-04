@@ -8,6 +8,22 @@ On Chinook, simply run at ~#
 
 c4 /etc/hello.c
 
+Brent Roman's viless: A tiny vi text editor clone with enough features to be truly useful is now included.
+
+On Chinook, simply run at ~#
+
+vi /etc/hello.c
+
+The filesystem is read only (for now), however /dev/ is read write, a new .c source file can be created here and run by C4.
+
+For example:
+
+cat /etc/hello.c > /dev/new.c
+vi /dev/new.c
+c4 /dev/new.c
+
+Remeber files created in /dev/ do not survive reboot!
+
 This repository contains a buildroot overlay, demo applications and makefiles used to build system images for tiny-rv32ima. An emulator (based on [mini-rv32ima](https://github.com/cnlohr/mini-rv32ima)) which can run on the host system is also included.
 
 The makefile contains multiple targets:
