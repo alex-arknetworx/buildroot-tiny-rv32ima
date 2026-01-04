@@ -22,7 +22,7 @@ vi /dev/new.c
 
 c4 /dev/new.c
 
-Remeber files created in /dev/ do not survive reboot!
+Remember files created in /dev/ do not survive reboot!
 
 This repository contains a buildroot overlay, demo applications and makefiles used to build system images for tiny-rv32ima. An emulator (based on [mini-rv32ima](https://github.com/cnlohr/mini-rv32ima)) which can run on the host system is also included.
 
