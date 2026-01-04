@@ -18,6 +18,7 @@ goodies: linux_toolchain
 	make -C goodies/hello_linux deploy
 	make -C goodies/coremark deploy
 	make -C goodies/c4 deploy
+	make -C goodies/viless deploy
 
 everything : goodies
 	make -C modules install
